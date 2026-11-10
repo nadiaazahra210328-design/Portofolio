@@ -1,0 +1,554 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --pink: #e88eae;
+    --pink-dark: #c85d86;
+    --pink-light: #fff0f5;
+    --pink-border: #f5b6cd;
+    --white: #ffffff;
+    --text: #51434a;
+    --gray: #887b82;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: var(--white);
+    color: var(--text);
+    line-height: 1.7;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+header {
+    background: white;
+    padding: 18px 8%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 15px rgba(232,142,174,0.15);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: var(--text);
+    text-decoration: none;
+}
+
+.logo span {
+    color: var(--pink);
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 28px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: var(--text);
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.nav-menu a:hover {
+    color: var(--pink-dark);
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero {
+    min-height: 570px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 75px 10%;
+    background: linear-gradient(
+        120deg,
+        #fff0f5,
+        #ffffff,
+        #ffe3ed
+    );
+}
+
+.hero-text {
+    max-width: 580px;
+}
+
+.hello {
+    color: var(--pink-dark);
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.hero h1 {
+    font-size: 43px;
+    margin: 18px 0 5px;
+    color: var(--text);
+}
+
+.hero h1 span {
+    color: var(--pink-dark);
+}
+
+.hero h2 {
+    font-size: 21px;
+    color: var(--pink);
+    margin-bottom: 18px;
+}
+
+.hero-text p {
+    color: var(--gray);
+    margin-bottom: 28px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.btn-primary,
+.btn-outline {
+    padding: 11px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-primary {
+    background: var(--pink);
+    color: white;
+}
+
+.btn-primary:hover {
+    background: var(--pink-dark);
+    transform: translateY(-3px);
+}
+
+.btn-outline {
+    border: 2px solid var(--pink-border);
+    color: var(--pink-dark);
+}
+
+.btn-outline:hover {
+    background: var(--pink);
+    color: white;
+}
+
+/* FOTO PROFIL */
+
+.hero-image {
+    position: relative;
+    padding: 20px;
+}
+
+.pink-circle {
+    width: 270px;
+    height: 270px;
+    background: linear-gradient(135deg, #f7b6cc, #e88eae);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    box-shadow: 0 15px 40px rgba(232,142,174,0.25);
+}
+
+.pink-circle img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 7px solid white;
+}
+
+.floating-text {
+    position: absolute;
+    bottom: 5px;
+    right: -5px;
+    background: white;
+    color: var(--pink-dark);
+    padding: 12px 20px;
+    border: 2px solid var(--pink-border);
+    border-radius: 30px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    font-size: 13px;
+}
+
+/* =========================
+   SECTION UMUM
+========================= */
+
+.section {
+    padding: 75px 10%;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-heading span {
+    color: var(--pink-dark);
+    font-size: 12px;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+.section-heading h2 {
+    font-size: 34px;
+    color: var(--text);
+    margin: 8px 0;
+}
+
+.section-heading h2 b {
+    color: var(--pink-dark);
+}
+
+.section-heading p {
+    color: var(--gray);
+    font-size: 14px;
+}
+
+/* =========================
+   ABOUT ME
+========================= */
+
+.about-card {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    padding: 35px;
+    background: #fff7fa;
+    border: 2px solid var(--pink-border);
+    border-radius: 18px;
+    box-shadow: 0 8px 25px rgba(232,142,174,0.12);
+    transition: 0.3s;
+}
+
+.about-card:hover {
+    border-color: var(--pink);
+    box-shadow: 0 12px 28px rgba(232,142,174,0.18);
+}
+
+.about-icon {
+    min-width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #f8d5e1;
+    color: var(--pink-dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 45px;
+}
+
+.about-content h3 {
+    color: var(--pink-dark);
+    margin-bottom: 12px;
+}
+
+.about-content p {
+    color: var(--gray);
+    margin-bottom: 12px;
+    font-size: 14px;
+}
+
+/* =========================
+   SKILLS
+========================= */
+
+.skills-section {
+    background: #fff5f8;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.skill-card {
+    text-align: center;
+    background: #fff7fa;
+    padding: 30px 18px;
+    border-radius: 16px;
+    border: 2px solid var(--pink-border);
+    transition: 0.3s;
+}
+
+.skill-card:hover {
+    transform: translateY(-8px);
+    border-color: var(--pink);
+    box-shadow: 0 12px 25px rgba(232,142,174,0.20);
+}
+
+.skill-icon {
+    width: 65px;
+    height: 65px;
+    margin: 0 auto 15px;
+    background: #ffe6ef;
+    color: var(--pink-dark);
+    border: 2px solid #f5c4d6;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+}
+
+.skill-card h3 {
+    color: var(--pink-dark);
+    margin-bottom: 10px;
+}
+
+.skill-card p {
+    color: var(--gray);
+    font-size: 13px;
+}
+
+/* =========================
+   EDUCATION
+========================= */
+
+.education-card,
+.experience-card {
+    max-width: 750px;
+    margin: auto;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    background: #fff7fa;
+    border: 2px solid var(--pink-border);
+    border-left: 6px solid var(--pink);
+    border-radius: 16px;
+    box-shadow: 0 5px 20px rgba(232,142,174,0.12);
+    transition: 0.3s;
+}
+
+.education-card:hover,
+.experience-card:hover {
+    border-color: var(--pink);
+    box-shadow: 0 10px 25px rgba(232,142,174,0.18);
+}
+
+.education-icon,
+.experience-icon {
+    min-width: 65px;
+    height: 65px;
+    background: #f8d5e1;
+    color: var(--pink-dark);
+    border: 2px solid var(--pink-border);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+}
+
+.year {
+    color: var(--pink-dark);
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.education-card h3,
+.experience-card h3 {
+    color: var(--pink-dark);
+    margin: 5px 0;
+}
+
+.education-card p,
+.experience-card p {
+    color: var(--gray);
+    font-size: 14px;
+}
+
+.education-desc {
+    margin-top: 8px;
+}
+
+/* =========================
+   EXPERIENCE
+========================= */
+
+.experience-section {
+    background: #fff5f8;
+}
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact-card {
+    max-width: 650px;
+    margin: auto;
+    padding: 35px;
+    background: #fff7fa;
+    border: 2px solid var(--pink-border);
+    border-radius: 18px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(232,142,174,0.12);
+    transition: 0.3s;
+}
+
+.contact-card:hover {
+    border-color: var(--pink);
+    box-shadow: 0 12px 28px rgba(232,142,174,0.18);
+}
+
+.contact-card h3 {
+    color: var(--pink-dark);
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+
+.contact-card > p {
+    color: var(--gray);
+    margin-bottom: 20px;
+}
+
+.contact-info {
+    background: #fff0f5;
+    padding: 18px;
+    border: 1px solid var(--pink-border);
+    border-radius: 12px;
+    text-align: left;
+}
+
+.contact-info p {
+    padding: 7px 0;
+    font-size: 14px;
+}
+
+.contact-info span {
+    color: var(--pink-dark);
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background: #f5c6d7;
+    text-align: center;
+    padding: 25px;
+    color: #75475a;
+}
+
+footer p {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+footer small {
+    font-size: 12px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 850px) {
+
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .skills-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .nav-menu {
+        gap: 13px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    header {
+        padding: 15px 5%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .nav-menu {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .nav-menu a {
+        font-size: 12px;
+    }
+
+    .hero {
+        padding: 50px 6%;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .pink-circle {
+        width: 220px;
+        height: 220px;
+    }
+
+    .profile {
+        width: 170px;
+        height: 170px;
+        font-size: 42px;
+    }
+
+    .section {
+        padding: 55px 6%;
+    }
+
+    .section-heading h2 {
+        font-size: 28px;
+    }
+
+    .skills-container {
+        grid-template-columns: 1fr;
+    }
+
+    .about-card,
+    .education-card,
+    .experience-card {
+        flex-direction: column;
+        text-align: center;
+    }
+}
