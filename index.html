@@ -1,206 +1,75 @@
+
 <!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | Nadia Azahra</title>
+    <title>Beranda | Nadia Azahra</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Navbar -->
+    <!-- NAVBAR -->
     <header>
         <nav class="navbar">
             <a href="#home" class="logo">Nadia<span>.</span></a>
 
             <ul class="nav-menu">
                 <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Hero -->
-    <section id="home" class="hero">
+    <!-- BERANDA -->
+    <section class="hero" id="home">
+
         <div class="hero-text">
-            <span class="hello">HELLO, WELCOME TO MY WEBSITE ♡</span>
 
-            <h1>Hi, I'm <span>Nadia Azahra</span></h1>
+            <span class="hello">
+                HELLO, WELCOME TO MY WEBSITE ♡
+            </span>
 
-            <h2>Informatics Engineering Student</h2>
+            <h1>
+                Hi, I'm <span>Nadia Azahra</span>
+            </h1>
+
+            <h2>
+                Informatics Engineering Student
+            </h2>
 
             <p>
-                Saya adalah mahasiswa Teknik Informatika yang
-                memiliki ketertarikan pada dunia teknologi,
+                Saya adalah mahasiswa Teknik Informatika
+                yang memiliki ketertarikan pada dunia teknologi,
                 pemrograman, dan pengembangan website.
                 Saya senang belajar hal baru dan mengembangkan
                 kemampuan melalui berbagai pengalaman.
             </p>
 
             <div class="hero-buttons">
-                <a href="#about" class="btn-primary">About Me</a>
-                <a href="#contact" class="btn-outline">Contact Me</a>
+                <a href="#home" class="btn-primary">
+                    About Me
+                </a>
+
+                <a href="mailto:nadiaazahra210321@gmail.com"
+                   class="btn-outline">
+                    Contact Me
+                </a>
             </div>
+
         </div>
 
+        <!-- FOTO PROFIL -->
         <div class="hero-image">
-    <div class="pink-circle">
-        <img src="images/foto.jpeg" alt="Foto Nadia Azahra">
-    </div>
+            <div class="pink-circle">
+                <img src="images/foto.jpeg" alt="Foto Nadia Azahra">
+            </div>
 
-    <div class="floating-text">♡ Keep Growing ♡</div>
-</div>
+            <div class="floating-text">
+                ♡ Keep Growing ♡
+            </div>
+        </div>
+
     </section>
-
-    <!-- About -->
-    <section id="about" class="section">
-        <div class="section-heading">
-            <span>GET TO KNOW ME</span>
-            <h2>About <b>Me</b></h2>
-            <p>Kenali sedikit tentang diri saya.</p>
-        </div>
-
-        <div class="about-card">
-            <div class="about-icon">♡</div>
-
-            <div class="about-content">
-                <h3>Halo, senang bertemu denganmu!</h3>
-
-                <p>
-                    Perkenalkan, saya Nadia Azahra, mahasiswa
-                    Program Studi Teknik Informatika Politeknik Negeri Jember.
-                    Saya memiliki minat dalam bidang teknologi
-                    informasi, khususnya pemrograman dan
-                    pengembangan website.
-                </p>
-
-                <p>
-                    Saya juga memiliki pengalaman dalam bidang
-                    instalasi jaringan internet serta kemampuan
-                    menggunakan Microsoft Word dan Excel.
-                    Saya terus berusaha meningkatkan kemampuan
-                    dan pengetahuan untuk masa depan.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills -->
-    <section id="skills" class="section skills-section">
-        <div class="section-heading">
-            <span>WHAT I CAN DO</span>
-            <h2>My <b>Skills</b></h2>
-            <p>Beberapa kemampuan yang sedang saya kembangkan.</p>
-        </div>
-
-        <div class="skills-container">
-
-            <div class="skill-card">
-                <div class="skill-icon">⌨</div>
-                <h3>HTML</h3>
-                <p>Membuat struktur dan konten halaman website.</p>
-            </div>
-
-            <div class="skill-card">
-                <div class="skill-icon">✿</div>
-                <h3>CSS</h3>
-                <p>Mengatur desain, warna, dan tampilan website.</p>
-            </div>
-
-            <div class="skill-card">
-                <div class="skill-icon">▤</div>
-                <h3>Microsoft Word</h3>
-                <p>Membuat dan mengelola dokumen.</p>
-            </div>
-
-            <div class="skill-card">
-                <div class="skill-icon">▦</div>
-                <h3>Microsoft Excel</h3>
-                <p>Mengolah data dan membuat tabel.</p>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- Education -->
-    <section id="education" class="section">
-        <div class="section-heading">
-            <span>MY JOURNEY</span>
-            <h2>My <b>Education</b></h2>
-            <p>Perjalanan pendidikan saya.</p>
-        </div>
-
-        <div class="education-card">
-            <div class="education-icon">🎓</div>
-
-            <div>
-                <span class="year">PENDIDIKAN SAAT INI</span>
-                <h3>Politeknik Negeri Jember</h3>
-                <p>Program Studi Teknik Informatika</p>
-                <p class="education-desc">
-                    Mempelajari teknologi informasi,
-                    pemrograman, dan pengembangan aplikasi.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Experience -->
-    <section id="experience" class="section experience-section">
-        <div class="section-heading">
-            <span>MY EXPERIENCE</span>
-            <h2>Work <b>Experience</b></h2>
-            <p>Pengalaman yang pernah saya miliki.</p>
-        </div>
-
-        <div class="experience-card">
-            <div class="experience-icon">♡</div>
-
-            <div>
-                <h3>Teknisi Instalasi Jaringan Internet</h3>
-                <p>
-                    Memiliki pengalaman dalam pemasangan
-                    perangkat jaringan internet, instalasi
-                    koneksi, dan membantu pengaturan jaringan
-                    agar dapat digunakan dengan baik.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact -->
-    <section id="contact" class="section">
-        <div class="section-heading">
-            <span>LET'S CONNECT</span>
-            <h2>Contact <b>Me</b></h2>
-            <p>Terima kasih sudah mengunjungi portofolio saya.</p>
-        </div>
-
-        <div class="contact-card">
-    <h3>Hubungi Saya! ♡</h3>
-
-    <p>
-        Terima kasih telah mengunjungi portofolio saya.
-        Saat ini saya sedang belajar dan mengembangkan
-        kemampuan di bidang teknologi informasi,
-        khususnya pemrograman dan pembuatan website.
-    </p>
-
-    <div class="contact-info">
-        <p>✉ Email: <span>nadiaazahra210321@gmail.com</span></p>
-        <p>⌘ GitHub: <span>nadiaazahra210328-design</span></p>
-    </div>
-</div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <p>Made with ♡ by Nadia Azahra</p>
-        <small>© 2026 Personal Portfolio. All Rights Reserved.</small>
-    </footer>
 
 </body>
 </html>

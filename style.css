@@ -1,4 +1,8 @@
 
+/* =========================
+   PENGATURAN DASAR
+========================= */
+
 * {
     margin: 0;
     padding: 0;
@@ -72,7 +76,7 @@ header {
 }
 
 /* =========================
-   HERO SECTION
+   BERANDA / HERO
 ========================= */
 
 .hero {
@@ -156,7 +160,9 @@ header {
     color: white;
 }
 
-/* FOTO PROFIL */
+/* =========================
+   FOTO PROFIL
+========================= */
 
 .hero-image {
     position: relative;
@@ -166,7 +172,11 @@ header {
 .pink-circle {
     width: 270px;
     height: 270px;
-    background: linear-gradient(135deg, #f7b6cc, #e88eae);
+    background: linear-gradient(
+        135deg,
+        #f7b6cc,
+        #e88eae
+    );
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -192,280 +202,8 @@ header {
     padding: 12px 20px;
     border: 2px solid var(--pink-border);
     border-radius: 30px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    box-shadow: 0 5px 20px rgba(232,142,174,0.15);
     font-size: 13px;
-}
-
-/* =========================
-   SECTION UMUM
-========================= */
-
-.section {
-    padding: 75px 10%;
-}
-
-.section-heading {
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-.section-heading span {
-    color: var(--pink-dark);
-    font-size: 12px;
-    letter-spacing: 3px;
-    font-weight: bold;
-}
-
-.section-heading h2 {
-    font-size: 34px;
-    color: var(--text);
-    margin: 8px 0;
-}
-
-.section-heading h2 b {
-    color: var(--pink-dark);
-}
-
-.section-heading p {
-    color: var(--gray);
-    font-size: 14px;
-}
-
-/* =========================
-   ABOUT ME
-========================= */
-
-.about-card {
-    display: flex;
-    align-items: center;
-    gap: 25px;
-    padding: 35px;
-    background: #fff7fa;
-    border: 2px solid var(--pink-border);
-    border-radius: 18px;
-    box-shadow: 0 8px 25px rgba(232,142,174,0.12);
-    transition: 0.3s;
-}
-
-.about-card:hover {
-    border-color: var(--pink);
-    box-shadow: 0 12px 28px rgba(232,142,174,0.18);
-}
-
-.about-icon {
-    min-width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    background: #f8d5e1;
-    color: var(--pink-dark);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 45px;
-}
-
-.about-content h3 {
-    color: var(--pink-dark);
-    margin-bottom: 12px;
-}
-
-.about-content p {
-    color: var(--gray);
-    margin-bottom: 12px;
-    font-size: 14px;
-}
-
-/* =========================
-   SKILLS
-========================= */
-
-.skills-section {
-    background: #fff5f8;
-}
-
-.skills-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-}
-
-.skill-card {
-    text-align: center;
-    background: #fff7fa;
-    padding: 30px 18px;
-    border-radius: 16px;
-    border: 2px solid var(--pink-border);
-    transition: 0.3s;
-}
-
-.skill-card:hover {
-    transform: translateY(-8px);
-    border-color: var(--pink);
-    box-shadow: 0 12px 25px rgba(232,142,174,0.20);
-}
-
-.skill-icon {
-    width: 65px;
-    height: 65px;
-    margin: 0 auto 15px;
-    background: #ffe6ef;
-    color: var(--pink-dark);
-    border: 2px solid #f5c4d6;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 28px;
-}
-
-.skill-card h3 {
-    color: var(--pink-dark);
-    margin-bottom: 10px;
-}
-
-.skill-card p {
-    color: var(--gray);
-    font-size: 13px;
-}
-
-/* =========================
-   EDUCATION
-========================= */
-
-.education-card,
-.experience-card {
-    max-width: 750px;
-    margin: auto;
-    padding: 30px;
-    display: flex;
-    align-items: center;
-    gap: 22px;
-    background: #fff7fa;
-    border: 2px solid var(--pink-border);
-    border-left: 6px solid var(--pink);
-    border-radius: 16px;
-    box-shadow: 0 5px 20px rgba(232,142,174,0.12);
-    transition: 0.3s;
-}
-
-.education-card:hover,
-.experience-card:hover {
-    border-color: var(--pink);
-    box-shadow: 0 10px 25px rgba(232,142,174,0.18);
-}
-
-.education-icon,
-.experience-icon {
-    min-width: 65px;
-    height: 65px;
-    background: #f8d5e1;
-    color: var(--pink-dark);
-    border: 2px solid var(--pink-border);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 28px;
-}
-
-.year {
-    color: var(--pink-dark);
-    font-size: 11px;
-    font-weight: bold;
-    letter-spacing: 2px;
-}
-
-.education-card h3,
-.experience-card h3 {
-    color: var(--pink-dark);
-    margin: 5px 0;
-}
-
-.education-card p,
-.experience-card p {
-    color: var(--gray);
-    font-size: 14px;
-}
-
-.education-desc {
-    margin-top: 8px;
-}
-
-/* =========================
-   EXPERIENCE
-========================= */
-
-.experience-section {
-    background: #fff5f8;
-}
-
-/* =========================
-   CONTACT
-========================= */
-
-.contact-card {
-    max-width: 650px;
-    margin: auto;
-    padding: 35px;
-    background: #fff7fa;
-    border: 2px solid var(--pink-border);
-    border-radius: 18px;
-    text-align: center;
-    box-shadow: 0 8px 25px rgba(232,142,174,0.12);
-    transition: 0.3s;
-}
-
-.contact-card:hover {
-    border-color: var(--pink);
-    box-shadow: 0 12px 28px rgba(232,142,174,0.18);
-}
-
-.contact-card h3 {
-    color: var(--pink-dark);
-    font-size: 24px;
-    margin-bottom: 12px;
-}
-
-.contact-card > p {
-    color: var(--gray);
-    margin-bottom: 20px;
-}
-
-.contact-info {
-    background: #fff0f5;
-    padding: 18px;
-    border: 1px solid var(--pink-border);
-    border-radius: 12px;
-    text-align: left;
-}
-
-.contact-info p {
-    padding: 7px 0;
-    font-size: 14px;
-}
-
-.contact-info span {
-    color: var(--pink-dark);
-}
-
-/* =========================
-   FOOTER
-========================= */
-
-footer {
-    background: #f5c6d7;
-    text-align: center;
-    padding: 25px;
-    color: #75475a;
-}
-
-footer p {
-    font-weight: bold;
-    margin-bottom: 5px;
-}
-
-footer small {
-    font-size: 12px;
 }
 
 /* =========================
@@ -482,10 +220,6 @@ footer small {
 
     .hero-buttons {
         justify-content: center;
-    }
-
-    .skills-container {
-        grid-template-columns: repeat(2, 1fr);
     }
 
     .nav-menu {
@@ -522,33 +256,12 @@ footer small {
         font-size: 32px;
     }
 
+    .hero h2 {
+        font-size: 18px;
+    }
+
     .pink-circle {
         width: 220px;
         height: 220px;
-    }
-
-    .profile {
-        width: 170px;
-        height: 170px;
-        font-size: 42px;
-    }
-
-    .section {
-        padding: 55px 6%;
-    }
-
-    .section-heading h2 {
-        font-size: 28px;
-    }
-
-    .skills-container {
-        grid-template-columns: 1fr;
-    }
-
-    .about-card,
-    .education-card,
-    .experience-card {
-        flex-direction: column;
-        text-align: center;
     }
 }
